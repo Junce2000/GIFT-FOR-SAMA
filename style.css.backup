@@ -1,0 +1,44 @@
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;width:100%;min-height:100%;font-family:"Baloo 2",system-ui,sans-serif;color:#61384a}
+body{min-height:100dvh;overflow-x:hidden;background:linear-gradient(145deg,#ffdce9 0%,#fff1f7 50%,#f8cede 100%)}
+main{width:100%;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:14px;position:relative;z-index:2}
+.screen{display:none;width:100%;max-width:520px;animation:appear .55s ease both}
+.screen.active{display:block}
+.card{width:100%;background:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.95);box-shadow:0 18px 55px rgba(173,77,112,.20);backdrop-filter:blur(12px);border-radius:28px;padding:28px 18px;text-align:center}
+.question-card{min-height:calc(100dvh - 28px);display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cat{font-size:58px;line-height:1;margin-bottom:18px;animation:float 3s ease-in-out infinite}
+.small{margin:0 0 7px;color:#a15c77;font-size:16px}
+h1{margin:3px 0 10px;font-size:clamp(40px,12vw,62px);line-height:.98;letter-spacing:-1px}
+h1 span{color:#ff6f9d}
+.sub{margin:0 0 34px;font-size:17px;opacity:.78}
+.buttons{display:flex;justify-content:center;align-items:center;gap:12px;min-height:70px;position:relative;width:100%;max-width:380px}
+.btn{border:0;border-radius:999px;padding:16px 28px;font:700 20px "Baloo 2",sans-serif;touch-action:manipulation;cursor:pointer}
+.yes{background:linear-gradient(135deg,#ff6f9d,#e95488);color:white;box-shadow:0 10px 25px rgba(233,84,136,.30)}
+.no{background:white;color:#b85a79;box-shadow:0 8px 22px rgba(120,50,80,.12);position:relative}
+.tease{min-height:28px;margin:18px 0 0;color:#d94d7d;font-size:16px;font-weight:600}
+.letter-card{padding:26px 17px}
+.sparkle{font-size:25px}
+h2{font-family:Pacifico,cursive;font-weight:400;font-size:40px;color:#d94d7d;margin:7px 0 18px}
+.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:18px 0}
+.photo{height:112px;border-radius:17px;overflow:hidden;background:#ffe5ef;border:2px dashed rgba(182,92,123,.25)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.letter{text-align:left;font-size:17px;line-height:1.48;margin:16px auto;max-width:650px}
+.memory{display:flex;align-items:flex-start;gap:11px;text-align:left;padding:15px;margin:20px 0;border-radius:19px;background:#fff1f6}
+.memory>div:first-child{font-size:30px}
+.memory strong{font-size:17px}
+.memory p{margin:3px 0 0;opacity:.75;font-size:15px;line-height:1.35}
+.music{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:7px;margin-top:22px}
+.music-btn{border:0;border-radius:999px;background:#61384a;color:white;padding:13px 22px;font:600 16px "Baloo 2",sans-serif;cursor:pointer}
+#musicText{font-size:13px;opacity:.65}
+.final{margin:25px 0 0;font-family:Pacifico,cursive;font-size:22px;color:#d94d7d}
+.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.heart{position:absolute;bottom:-40px;font-size:20px;opacity:.7;animation:rise linear forwards}
+@keyframes rise{from{transform:translateY(0) rotate(0);opacity:0}15%{opacity:.75}to{transform:translateY(-115dvh) rotate(35deg);opacity:0}}
+@keyframes appear{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media (max-width:360px){
+ .card{padding-left:14px;padding-right:14px}
+ h1{font-size:38px}
+ .btn{padding:14px 23px;font-size:18px}
+ .photo{height:92px}
+}

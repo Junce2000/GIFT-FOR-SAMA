@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#ffdce9">
+  <title>Для тебя ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main>
+    <section id="question" class="screen active">
+      <div class="card question-card">
+        <div class="cat">૮ ˶ᵔ ᵕ ᵔ˶ ა</div>
+        <p class="small">у меня к тебе один вопрос...</p>
+        <h1>Ты будешь<br><span>моей девушкой?</span> 💗</h1>
+        <p class="sub">только подумай хорошенько 😌</p>
+
+        <div class="buttons">
+          <button id="yesBtn" class="btn yes">ДА ❤️</button>
+          <button id="noBtn" class="btn no">НЕТ 🙈</button>
+        </div>
+        <p id="tease" class="tease"></p>
+      </div>
+    </section>
+
+    <section id="letter" class="screen">
+      <div class="card letter-card">
+        <div class="sparkle">✨ 💗 ✨</div>
+        <p class="small">я сделал это специально для тебя</p>
+        <h2>Привет, красавица 💕</h2>
+
+        <div class="photo-grid">
+          <div class="photo"><img src="photos/photo1.jpg" alt="Наше фото 1"></div>
+          <div class="photo"><img src="photos/photo2.jpg" alt="Наше фото 2"></div>
+          <div class="photo"><img src="photos/photo3.jpg" alt="Наше фото 3"></div>
+        </div>
+
+        <p class="letter">
+          Я хотел сделать тебе что-нибудь особенное, а не просто отправить
+          обычное сообщение. Поэтому сделал это маленькое место только для тебя. 💗
+        </p>
+
+        <p class="letter">
+          Спасибо тебе за все наши моменты, разговоры, смех и воспоминания.
+          Надеюсь, эта маленькая штука заставит тебя улыбнуться. ❤️
+        </p>
+
+        <div class="memory">
+          <div>🌷</div>
+          <div>
+            <strong>Наше особенное воспоминание</strong>
+            <p>Замени этот текст на вашу историю: первое знакомство, первое свидание или любимый момент.</p>
+          </div>
+        </div>
+
+        <div class="music">
+          <button id="musicBtn" class="music-btn">🎵 Наша песня</button>
+          <audio id="music" src="music.mp3" loop></audio>
+          <span id="musicText">Добавь файл music.mp3</span>
+        </div>
+
+        <p class="final">Сделано с любовью ❤️</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
